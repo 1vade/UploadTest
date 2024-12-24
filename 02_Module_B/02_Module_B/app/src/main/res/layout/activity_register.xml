@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".ui.LoginActivity">
+	
+	<androidx.viewpager.widget.ViewPager
+		android:id="@+id/viewPager"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" />
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+		
+		<TextView
+			android:layout_width="100dp"
+			android:layout_height="100dp"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="100dp"
+			android:background="@drawable/item_edit"
+			android:gravity="center"
+			android:text="Best \npictures"
+			android:textSize="24sp" />
+		
+		<EditText
+			android:id="@+id/username"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginHorizontal="50dp"
+			android:layout_marginVertical="10dp"
+			android:background="@drawable/item_edit"
+			android:hint="用户名"
+			android:padding="14dp" />
+		
+		<EditText
+			android:id="@+id/email"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginHorizontal="50dp"
+			
+			android:background="@drawable/item_edit"
+			android:hint="邮箱"
+			android:padding="14dp" />
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginHorizontal="50dp"
+			android:layout_marginTop="10dp"
+			android:background="@drawable/item_edit"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			
+			<EditText
+				android:id="@+id/password"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_margin="4dp"
+				android:layout_weight="1"
+				android:background="@color/white"
+				android:hint="密码"
+				android:padding="10dp" />
+			
+			<ImageView
+				android:id="@+id/visible"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_marginEnd="10dp"
+				android:src="@drawable/bukejian" />
+		</LinearLayout>
+		
+		<EditText
+			android:id="@+id/confirm"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginHorizontal="50dp"
+			android:layout_marginVertical="10dp"
+			android:background="@drawable/item_edit"
+			android:hint="再次输入密码"
+			android:padding="14dp" />
+		
+		<TextView
+			android:id="@+id/register"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="10dp"
+			android:background="@drawable/item_edit"
+			android:paddingHorizontal="60dp"
+			android:paddingVertical="10dp"
+			android:text="注册"
+			android:textSize="18sp" />
+		
+		<TextView
+			android:id="@+id/reLogin"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="10dp"
+			android:text="&lt;&lt;回到登录"
+			android:textColor="#A17490"
+			android:textSize="12sp" />
+	</LinearLayout>
+
+
+</FrameLayout>
